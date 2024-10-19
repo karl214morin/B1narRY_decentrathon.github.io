@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learn Programming</title>
+
+    <style>
+        body {
+            background-image: url('https://academy-public.coinmarketcap.com/srd-optimized-uploads/3139034ec67c4d02926579ead12fccf9.png');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+            
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-shadow: rgb(0, 0, 0);
+            text-decoration-color: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: cyan;
+            text-align: justify;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #fcfbfb;
+            background-color: rgba(52, 228, 173, 0.76);
+        }
+
+        h3 {
+            color: black ;
+            background-color: rgba(205, 204, 204, 0.858);
+        }
+
+        .language-list {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: rgb(9, 137, 137);
+        }
+
+        .quiz-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            color: black;
+        }
+
+        .quiz-section input[type="radio"], .quiz-section input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        quiz-section input[type="text"], .quiz-section select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+
+
+
+        ul li {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        ol li {
+            margin: justify;
+            color: black;
+            background-color: rgba(252, 252, 252, 0.522); 
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Learn Programming: Python  </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#languages">Key Features</a></li>
+            <li><a href="#concepts">General usage</a></li>
+            <li><a href="#tg bot">Python & Telegram </a></li>
+            <li><a href="#resources">Learning Resources</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2>Introduction to Python</h2>
+            <p>Python is a high-level, general-purpose programming language known for its readability, simplicity, and versatility. It was created by Guido van Rossum and first released in 1991. Python emphasizes code readability, which allows programmers to express concepts in fewer lines of code compared to many other programming languages.</p>
+        </section>
+
+        <section id="languages">
+            <h2></h2>
+            <div class="language-list">
+                <h3>***************************************************</h3>
+                <p>Easy to Learn and Use: Python has a clean, easy-to-understand syntax, making it a popular choice for beginners and experts alike.</p>
+                
+                <h3>***************************************************</h3>
+                <p>Interpreted Language: Python code is executed line by line, which makes debugging easier but can lead to slower execution than compiled languages like C or C++.</p>
+                
+                <h3>***************************************************</h3>
+                <p>Dynamically Typed: You don’t need to declare the type of a variable in Python. Types are decided during runtime, allowing for flexibility but potentially leading to runtime errors if not handled properly.</p>
+                
+                <h3>***************************************************</h3>
+                <p>Object-Oriented: Python supports object-oriented programming, allowing you to define classes and objects, encapsulating both data and methods.</p>
+            </div>
+        </section>
+
+        <section id="concepts">
+            <h2>Common Uses of Python:</h2>
+            <div class="concepts">
+                <ol>
+                    <li><strong>Web Development:</strong> Frameworks like Django and Flask make Python a strong choice for backend development.</li>
+                    <li><strong>Data Science and Machine Learning:</strong> Python is widely used in data analysis, machine learning, and artificial intelligence, with libraries like NumPy, Pandas, Matplotlib, Scikit-learn, and TensorFlow.</li>
+                    <li><strong>Automation and Scripting:</strong> Python's simplicity makes it ideal for writing small scripts to automate tasks such as file manipulation, data scraping, and system operations.</li>
+                    <li><strong>Game Development:</strong> Libraries like Pygame allow for the creation of games and multimedia applications.</li>
+                    <li><strong>Artificial Intelligence (AI) and Machine Learning (ML):</strong> Python's vast ecosystem makes it a go-to language for AI and ML projects.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="tg bot">
+            <h2> Telegram & Python </h2>
+            <div class="tg bot">
+                <h3>Interaction between two giants</h3>
+                <p>Telegram interacts with Python primarily through the use of Telegram Bot API and Telegram Client Libraries like python-telegram-bot and Telethon. These tools allow Python applications to automate tasks, manage Telegram groups and channels, interact with users, and send or receive messages via Telegram. Below is an overview of how you can integrate Telegram with Python:</p>
+                <ul>
+                    <p><strong>Polling vs Webhook</strong></p>
+                    <li><i>Polling: The bot continuously checks (polls) the Telegram servers for updates. It's easier to set up but can be inefficient and slow.</i></li>     
+                    <li><i>Webhook: Telegram sends updates directly to your server when an event happens. It’s more efficient but requires a public server with HTTPS (SSL/TLS).</i></li>
+                </ul>
+                
+                <ul>
+                    <p><b>Telegram Bots Use Cases in Python</b></p>
+                    <li><p>Chatbot:</p><i> Build interactive chatbots for customer service, games, or community engagement.</i></li>
+                    <li><p> Automation:</p><i>Automate tasks like scraping content, sending notifications, or monitoring services.</i></li>
+                    <li><p>Data Gathering: </p><i> Collect user inputs, surveys, or even log data from other services.</i></li>
+                    <li><p>Group Moderation: </p><i>Build a bot that moderates a Telegram group (e.g., banning spam, welcoming new members).</i></li>
+                </ul>
+                <p>By combining the Telegram Bot API or Telethon with Python, you can develop powerful bots and applications that interact seamlessly with Telegram's ecosystem.</p>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Recommended Learning Resources</h2>
+            <p>Here are some useful resources to continue your programming journey:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> – A great resource for web development tutorials.</li>
+                <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> – An interactive platform for learning to code.</li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> – A free and community-driven resource for coding.</li>
+                <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a> – Offers interactive tutorials in a variety of programming topics.</li>
+            </ul>
+        </section>
+    </main>
+
+    <section id="quiz" class="quiz-section">
+        <h2>Python Quiz</h2>
+        <form id="quizForm">
+            <div class="question">
+                <label for="year">When was Python released?</label><br>
+                <input type="radio" id="In 1961" name="year" value="In 1961"> In 1961<br>
+                <input type="radio" id="rome" name="year" value="In 2010"> In 2010<br>
+                <input type="radio" id="madrid" name="year" value="In 1991"> In 1991 <br>
+                <input type="radio" id="london" name="year" value="In 2024> In 2024 <br>
+            </div>
+    
+            <div class="question">
+                <label for="right ans">Choose the appropriate answer for Python</label><br>
+                <input type="radio" id="python" name="language" value="not"> Fastest programming language<br>
+                <input type="radio" id="html" name="language" value="real"> Interpreted language<br>
+                <input type="radio" id="java" name="language" value="got"> Scripted language<br>
+                <input type="radio" id="css" name="language" value="net"> Cannot be used to create Telegram bots <br>
+            </div>
+    
+            <div class="question">
+                <label for="TrFa">Python features a simple and readable syntax, which makes it a favored programming language for both beginners and experienced developers.</label><br>
+                <input type="radio" id="True" name="bool" value="True"> True <br>
+                <input type="radio" id="False" name="bool" value="False"> False<br>
+            </div>
+    
+            <div class="question">
+                <label>Python is ... programming language (find the correct one)</label><br>
+                <input type="radio" id="get" name="computer" value="Computer"> Computer<br>
+                <input type="radio" id="got" name="computer" value="Binary"> Binary <br>
+                <input type="radio" id="gut" name="computer" value="Low"> Low<br>
+                <input type="radio" id="gat" name="computer" value="high"> High <br>
+            </div>
+    
+            <div class="question">
+                <label for="ferg">What is a simpler but potentially slower method for a bot to check for updates from Telegram servers?</label><br>
+                <input type="radio" id="Polling" name="Polling" value="Polling"> Polling<br>
+                <input type="radio" id="Webhook" name="Polling" value="Webhook"> Webhook<br>
+                <input type="radio" id="Telegram" name="Polling" value="Telegram"> Telegram<br>
+                <input type="radio" id="Chatbot" name="Polling" value="Chatbot"> Chatbot<br>
+            </div>
+    
+            <button type="submit" class="submit-btn">Submit Quiz</button>
+        </form>
+    
+        <div id="result" class="result"></div>
+    </section>
+    
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let score = 0;
+
+    
+  
+            if (document.querySelector('input[name="year"]:checked')?.value === 'In 1991') score++;
+            if (document.querySelector('input[name="language"]:checked')?.value === 'real') score++;
+            if (document.querySelector('input[name="bool"]:checked')?.value === 'True') score++;
+            if (document.querySelector('input[name="computer"]:checked')?.value === 'high') score++;
+            if (document.querySelector('input[name="Polling"]:checked')?.value === 'Polling') score++;
+    
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('result').innerText = `Your score is ${score}/5.`;
+        });
+    </script>
+
+
+
+<footer>
+    <p>&copy;All data secured</p>
+</footer>
+
+</body>
+</html>
