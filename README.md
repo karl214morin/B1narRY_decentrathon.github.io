@@ -1,1 +1,0 @@
-# B1narRY_decentrathon.github.io
